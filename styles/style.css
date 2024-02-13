@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --cor-primaria: #161616;
+    --cor-secundaria: #f3f3f3;
+    --cor-terciaria: #7ad844;
+    --cor-hover: #47941a;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 4% 15% 9% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo {
+    color: var(--cor-secundaria);
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.texto-principal {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    line-height: normal;
+}
+
+.imagem {
+    width: 40%;
+    height: 60%;
+    border-radius: 16px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px; 
+}
+
+.botoes__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.botaoLinkIneGitHub {
+    /* background-color: #7ad844; - código anterior */ 
+    background-color: none;
+    border-radius: 10px;
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    padding: 21.5px 0;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 55%;
+    color: var(--cor-secundaria);
+    display: inline-flex;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.botaoLinkIneGitHub:hover {
+    background-color: var(--cor-hover);
+}
+
+.imagem__botao {
+    width: 8%;
+}
+
+.rodape {
+    background-color:var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px;
+}
+
+.titulo__about {
+    text-align: center;
+    padding: 3% 0 2% 4%;
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-terciaria);
+
+}
+
+.titulo__about h1 {
+    color: var(--cor-secundaria);
+}
+
+.titulo__about h1 strong {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao2 {
+    padding: 1% 15% 9% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__primeira-parte {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: normal;
+    font-weight: 570;
+    color: var(--cor-secundaria);
+    line-height: normal;
+}
+
+.imagemComputador {
+    width: 350%;
+    border-radius: 5%;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;    
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .imagem {
+        width: 70%;
+    }
+
+    .apresentacao2 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .imagemComputador {
+        width: 70%;
+        margin-top: 10%;
+    }
+
+    .section__about {
+        width: auto;
+    }
+
+    .about__primeira-parte {
+        padding: auto;
+    }
+}
