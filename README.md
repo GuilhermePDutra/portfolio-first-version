@@ -2,7 +2,7 @@
 
 ## Olá, Bem-vindo(a) à minha primeira versão do projeto de portfólio.
 
-![image](https://github.com/GuilhermePDutra/portifolio-versao-1/blob/main/img/Projeto-Portifolio.png?raw=true)
+![image](https://github.com/GuilhermePDutra/portifolio-first-version/blob/main/assets/Projeto-Portifolio.png?raw=true)
 
 ## Ferramentas utilizadas:
 
